@@ -40,14 +40,13 @@ export class CadastrarJogoComponent implements OnInit {
       selecaoA: { id: this.TimeA, nome: "" },
       selecaoB: { id: this.TimeB, nome: "" },
       golA: 0,
-      golB: 0,
-      criadoEm: dataConvertida.toDateString()
+      golB: 0
     }
     
     this.http.post<Jogo>("https://localhost:5001/api/jogo/cadastrar", jogo).subscribe(
         {
           next: (resposta) => {
-            alert(resposta)
+            alert('ok')
           }
         })
     
