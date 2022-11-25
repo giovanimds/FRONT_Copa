@@ -2,5 +2,12 @@
   <mat-card-header>
     <mat-card-title> Palpitar Jogo </mat-card-title>
   </mat-card-header>
-  <mat-card-content> </mat-card-content>
+  <mat-card-content>
+  
+    <input type="number" [(ngModel)]="GolA"/>
+    <input type="number" [(ngModel)]="GolB"/>
+    <input type="submit" (click)="cadastrarPalpite()" />
+  
+  
+  </mat-card-content>
 </mat-card>

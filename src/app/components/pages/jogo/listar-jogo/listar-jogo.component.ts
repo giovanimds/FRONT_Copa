@@ -15,10 +15,15 @@ export class ListarJogoComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<Jogo[]>("https://localhost:5001/api/jogo/listar").subscribe({
+    this.http.get<Jogo[]>("https://localhost:5001/api/selecao/listar").subscribe({
       next: (Jogos) => {
         this.jogos = Jogos;
       },
     });
   }
+  
+  palpitar(Jogo: Jogo): void{
+    
+  }
+  
 }

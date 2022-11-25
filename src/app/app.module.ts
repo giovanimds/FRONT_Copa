@@ -20,9 +20,10 @@ import { CadastrarSelecaoComponent } from './components/pages/selecao/cadastrar-
 import { CadastrarJogoComponent } from './components/pages/jogo/cadastrar-jogo/cadastrar-jogo.component';
 import { ListarJogoComponent } from './components/pages/jogo/listar-jogo/listar-jogo.component';
 import { PalpitarJogoComponent } from './components/pages/jogo/palpitar-jogo/palpitar-jogo.component';
+import { CadastrarPalpiteComponent } from './pages/palpite/cadastrar-palpite/cadastrar-palpite.component';
 
 @NgModule({
-  declarations: [AppComponent, CadastrarSelecaoComponent, CadastrarJogoComponent, ListarJogoComponent, PalpitarJogoComponent],
+  declarations: [AppComponent, CadastrarSelecaoComponent, CadastrarJogoComponent, ListarJogoComponent, PalpitarJogoComponent, CadastrarPalpiteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
